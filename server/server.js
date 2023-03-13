@@ -57,10 +57,10 @@ app.delete("/api/employees/:id", async (req, res, next) => {
   }
 });
 
-app.get("/employees/superheroes", async (req, res) => {
+app.get("/api/employees-superheroes", async (req, res) => {
   const employees = await EmployeeModel.find({"position": "Superhero"}).sort({ created: "desc" });
   return res.json(employees);
-})
+});
 
 const main = async () => {
   await mongoose.connect(MONGO_URL);

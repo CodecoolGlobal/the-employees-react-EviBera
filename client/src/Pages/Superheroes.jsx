@@ -3,7 +3,10 @@ import Loading from "../Components/Loading";
 import EmployeeTable from "../Components/EmployeeTable";
 
 const fetchSuperheroes = () => {
-  return fetch("/employees/superheroes").then((res) => res.json());
+  return fetch("/api/employees-superheroes").then((res) => res.json());  
+    //abszolút hivatkozással megelőzhető a bug(!), viszont relatív hivatkozással elkerülhető,
+    //hogy a server elköltözésével meghaljon a program => '/api'-t érdemes elé tenni 
+    //vagy valamilyen különböző nevet adni neki
 };
 
 /* const deleteEmployee = (id) => {
