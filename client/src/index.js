@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         element: <FormTest />,
       },
       {
-        path: "hello",
+        path: "/hello",
         element: <h1>Hello Dude!</h1>
       },
       {
