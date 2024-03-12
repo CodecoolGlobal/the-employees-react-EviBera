@@ -1,5 +1,13 @@
 # Employee Data
 
+
+This project was created to practice server side and client side routing. 
+
+The app displays employee data, the user can add new records or update and cancel existing ones.
+
+
+You can try the app following these steps:
+
 ## Server side
 
 ### Install dependencies
@@ -9,7 +17,7 @@ npm install
 ```
 
 ### .env file
-Copy the .env.sample as .env and fill up the environment variable for your personal mongodb connecttion url.
+Add .env file and fill up the environment variable for your personal mongodb connecttion url (MONGO_URL= //your connection string).
 
 ### Prepare the database
 
@@ -28,10 +36,6 @@ npm run dev
 ```
 
 It will start the server with nodemon. So it will watch the changes and restart the server if some ot the files changed.
-
-### Testing with test.http
-
-If you like to try the endpoints of the rest api, you can check the test.http file for urls are should work on your environment as well. And if you install the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extenstion for vscode you can actually run those in your editor.
 
 
 
